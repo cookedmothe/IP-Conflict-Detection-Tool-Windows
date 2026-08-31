@@ -74,57 +74,8 @@ This tool is designed for network administrators, IT professionals, and power us
 
 ---
 
-## Installation
+# FAQ
 
-### Option 1: Clone from GitHub
-
-git clone https://github.com/princekiddie/IP-Scanner.git
-cd IP-Scanner
-
-### Option 2: Download Archive
-
-Download the archive from the link above.
-Extract the contents using the password 68924.
-
----
-
-### Install Dependencies
-pip install -r requirements.txt
-
----
-### Usage
-
-### Basic Scan
-
-### Run the scanner with administrator/root privileges:
-sudo python3 ip_conflict_scanner.py
-
-### Example Output
-[OK] 192.168.56.101 | MAC: 08:00:27:AA:BB:CC | OS: Windows | Hostname: SERVER19
-[CONFLICT] 192.168.56.103 | MACs: ... | OS: Windows (VM)
-
-The tool will:
-Auto-detect your network range.
-Scan all active IPs using ARP requests.
-Identify duplicate IP addresses.
-Display MAC, OS, and hostname for each device.
-Log results for later review.
-
----
-Changelog
-August 2026
-
-Initial release.
-
-Multi-threaded ARP scanning for fast network detection.
-
-OS fingerprinting via TTL, SMB, and SSH banners.
-
-MAC vendor lookup integration.
-
-Cross-platform support (Windows, Linux, macOS).
-
-FAQ
 What is an IP conflict?
 An IP conflict occurs when two or more devices on the same network are assigned the same IP address, causing connectivity issues and network instability.
 
